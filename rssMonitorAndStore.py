@@ -61,6 +61,7 @@ while True:
         db_conn.commit()
       except psycopg2.DatabaseError as error:
         print(error)
+      consumer.commit()
 
   sleep(pollInterval)
 
